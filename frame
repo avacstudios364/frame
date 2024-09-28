@@ -1,0 +1,41 @@
+from tkinter import *
+
+root = Tk()
+root.geometry('700x500')
+root.config(background = 'salmon')
+
+colour = (155,50,50)
+
+w = Label(root, text = 'ice cream and chocolates', font = '45', bg = 'lightcoral')
+w.pack(pady = 0)
+
+#creating 2 frames = 1st frame
+frame1 = Frame(root)
+frame1.pack(pady = 10)
+
+#2nd frame
+bottom_frame = Frame(root)
+bottom_frame.pack(side = BOTTOM)
+
+#buttons bottom frame
+bottom_frame4 = Button(bottom_frame, text = 'chocolate ice cream ', bg = 'salmon', fg = 'black')
+bottom_frame4.pack(side = BOTTOM)
+
+bottom_frame5 = Button(bottom_frame, text = '   coffee ice cream    ', bg = 'pink', fg = 'black')
+bottom_frame5.pack(side = BOTTOM)
+
+bottom_frame6 = Button(bottom_frame, text = 'strawberry icecream ', bg = 'coral', fg = 'black')
+bottom_frame6.pack(side = BOTTOM)
+
+bottom_frame6 = Button(bottom_frame, text = '    vanilla icecream    ', bg = 'lightcoral', fg = 'black')
+bottom_frame6.pack(side = BOTTOM)
+
+#buttons top frame
+frame_1 = Button(frame1, text = 'hot chocolate - cream & marshmellows comes free', bg = 'brown', fg = 'white')
+frame_1.pack(side = LEFT)
+
+frame_2 = Button(frame1, text = 'milk chocolate bar', bg = 'brown', fg = 'white')
+frame_2.pack(side = RIGHT)
+
+root.mainloop()
+
